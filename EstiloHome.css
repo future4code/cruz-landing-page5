@@ -1,13 +1,15 @@
-*{
-    width: 100vw;
+* {
+    width: 100%;
     margin:0;
-    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: arial;
 }
 
 /* HEADER */
 
 header{
-    background-color:#2f3437;
+    background-color:#1E1E23;
     width: 100%;
     height: 100px;
     display:flex;
@@ -17,19 +19,19 @@ header{
 
 #logo{
     width: 200px;
-    padding-left: 10px;
 }
 
 .menu{
     text-decoration: none;
     float: right;
     color:white;
-    width: 100vw;
+    width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
     height: 40px;
     margin-top: 0;
+    font-size: 15px;
     }
 
 /* .bt_menu:hover ~ .menu{
@@ -47,7 +49,7 @@ header{
     justify-content: center;
     align-items: center;
     border: solid white 1px;
-    background-color:#2f3437;
+    background-color:#1E1E23;
 }
 
 .menu a:hover{
@@ -64,17 +66,17 @@ a p{
 /* #caixa_menu{
     visibility: hidden;
 } */
-
+/* 
 .bt_menu{
-    width: 10vw;
+    width: 10%;
     color:white;
     margin-left:2px;
     cursor: pointer;
-}
+} */
 
-.bt_menu p{
+/* .bt_menu p{
     font-size: 25px;
-}
+} */
 
 /* SEÇÃO 1 */
 
@@ -97,20 +99,20 @@ a p{
     font-family: 'arial';
     margin-top:10px;
     width: 40vw;
-    margin-right: 15vw;
+    /* margin-right: 15vw; */
 }
 
 .secao1 h2{
     font-family: 'arial';
     margin-bottom:10px;
     width: 40vw;
-    margin-right: 15vw;
+    /* margin-right: 15vw; */
 }
 
 .explicacao{
     width: 40vw;
     text-align: justify;
-    margin-right: 15vw;
+    /* margin-right: 15vw; */
 }
 
 .explicacao h3{
@@ -206,7 +208,7 @@ transition: all 1s;
 /* FOOTER */
 
 footer{
-    background-color:#2f3437;
+    background-color:#1E1E23;
     width: 100%;
     height: 20vh;
     margin-bottom: 0;
@@ -219,12 +221,12 @@ footer{
 }
 
 .redes{
-    background-color:#2f3437;
+    background-color:#1E1E23;
 }
 
 .redes-logo{
 width: 40px;
-margin:0 5vw;
+/* margin:0 5vw; */
 }
 
 /* ADAPTAÇÕES PARA IPHONE 6/7/8. Em verde estão as propriedades mantidas iguais em relação ao Desktop. */
@@ -272,7 +274,7 @@ margin:0 5vw;
     .explicacao p{
         width: 90vw;
         text-align: justify;
-        margin:0 5vw;
+        margin-left:5vw;
     }
     
     .secao2{
