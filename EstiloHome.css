@@ -76,14 +76,140 @@ a p{
     font-size: 25px;
 }
 
+/* SEÇÃO 1 */
+
+
+.secao1{
+    width: 100vw;
+    height:  400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items:flex-end;
+    text-align: justify;
+    color: white;
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2016/05/paris-1280x400-1.jpg);
+}
+
+
+
+.secao1 h1{
+    font-family: 'arial';
+    margin-top:10px;
+    width: 40vw;
+    margin-right: 15vw;
+}
+
+.secao1 h2{
+    font-family: 'arial';
+    margin-bottom:10px;
+    width: 40vw;
+    margin-right: 15vw;
+}
+
+.explicacao{
+    width: 40vw;
+    text-align: justify;
+    margin-right: 15vw;
+}
+
+.explicacao h3{
+    width: 35vw;
+}
+
+.explicacao p{
+    width: 35vw;
+}
+
+/* SEÇÃO 2 */
+
+.secao2{
+    width: 100vw;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,50vw);
+    grid-template-rows:repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+    grid-auto-flow: row;
+}
+
+.secao2 h1{
+    grid-column: 1/span 2;
+    text-align: center;
+}
+
+
+.servicos{
+    width: 30vw;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration:none;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-image: url(https://blogs.opovo.com.br/artesanatodamente/wp-content/uploads/sites/52/2014/07/41-riqueza0100409.jpg);
+}
+
+.casos-sucesso{
+    width: 30vw;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration:none;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-image: url(https://www.iq.com.br/wp-content/uploads/2018/12/shutterstock_1038717511-770x478.jpg)
+}
+
+.servicos p, .servicos h2{
+    width: 90%;
+    color: white;
+    text-align: left;
+    margin: 10px;
+}
+
+.casos-sucesso p, .casos-sucesso h2{
+    width: 90%;
+    color: black;
+    text-align: left;
+    margin: 10px;
+}
+
+.servicos:hover{
+    background-image: url(https://static8.depositphotos.com/1036149/847/i/600/depositphotos_8473450-stock-photo-dollar-sign.jpg);
+    transition: all 1s;
+    }
+    
+.servicos:hover p, .servicos:hover h2{
+    color: black;
+    transform:scale(1.1);
+    transition: all 1s;
+}
+
+.casos-sucesso:hover{
+background-image: url(https://tvmundomaior.com.br/wp-content/uploads/2018/09/celebrar-822x617.jpg);
+transition: all 1s;
+}
+
+.casos-sucesso:hover p, .casos-sucesso:hover h2{
+    transform:scale(1.1);
+    transition: all 1s;
+    color: white;
+}
+
 /* FOOTER */
 
 footer{
     background-color:#2f3437;
     width: 100%;
     height: 20vh;
-    position:fixed;
-    bottom: 0;
+    margin-bottom: 0;
     color: white;
     text-align: center;
     display: flex;
@@ -99,4 +225,120 @@ footer{
 .redes-logo{
 width: 40px;
 margin:0 5vw;
+}
+
+/* ADAPTAÇÕES PARA IPHONE 6/7/8. Em verde estão as propriedades mantidas iguais em relação ao Desktop. */
+
+@media screen and (max-device-width:700px){
+    
+    .secao1{
+        /* width: 100vw; */
+        /* height:  400px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-items: center; */
+        align-items:flex-start;
+        /* text-align: justify;
+        color: white;
+        background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2016/05/paris-1280x400-1.jpg); */
+    }
+
+    .secao1 h1{
+        /* font-family: 'arial';
+        margin-top:10px; */
+        width: 100vw;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .secao1 h2{
+        /* font-family: 'arial';
+        margin-bottom:10px; */
+        width: 100vw;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .explicacao{
+        width: 100vw;
+        text-align: center;
+        margin-right: 0;
+    }
+    
+    .explicacao h3{
+        width: 100vw;
+    }
+    
+    .explicacao p{
+        width: 90vw;
+        text-align: justify;
+        margin:0 5vw;
+    }
+    
+    .secao2{
+        /* width: 100vw; */
+        height: 400px;
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3,1fr);
+        /* justify-items: center;
+        align-items: center; */
+        /* margin-bottom: 30px; */
+        /* grid-auto-flow: row; */
+    }
+    
+    .secao2 h1{
+        grid-column: 1/2;
+        /* text-align: center; */
+    }
+
+    .servicos{
+        width: 90vw;
+        height: 100px;
+        /* border: 2px solid black;
+        border-radius: 10px;
+        text-decoration:none; */
+        /* display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center; */
+        background-image: url(https://primetimes.com.br/wp-content/uploads/2020/12/ba99c6bc-cooperativismo-e-dinheiro-400x200.jpg);
+    }
+    
+    .casos-sucesso{
+        width: 90vw;
+        height: 100px;
+        /* border: 2px solid black;
+        border-radius: 10px;
+        text-decoration:none; */
+        /* display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center; */
+        /* background-image: url(https://www.iq.com.br/wp-content/uploads/2018/12/shutterstock_1038717511-770x478.jpg) */
+    }
+
+    .servicos p, .servicos h2{
+        /* width: 90%; */
+        color: black;
+        /* text-align: left;
+        margin: 10px; */
+    }
+
+    .servicos:hover{
+        background-image: url(https://www.portalsaudenoar.com.br/wp-content/uploads/2020/10/dinheiro-aposentado.jpg);
+        /* transition: all 1s; */
+        }
+        
+    .servicos:hover p, .servicos:hover h2{
+        color: black;
+        /* transform:scale(1.1);
+        transition: all 1s; */
+    }
+    
+    .casos-sucesso:hover{
+    background-image: url(https://sites.google.com/site/nobrufotografia/_/rsrc/1476823178077/architecture/Mansao-Lido-Di-Jesolo-Veneza-01-1050x525.jpg?height=200&width=400);
+    /* transition: all 1s; */
+    }
+
 }
